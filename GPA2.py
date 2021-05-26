@@ -22,5 +22,9 @@ if not flag:
   print(num)
   
   
- if __name__ == "__main__"
+# equivalent to main function in c  
+if __name__ == "__main__":
+    num = int(input())
+    prime = [2]
+ 
  
