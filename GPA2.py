@@ -3,10 +3,10 @@
 def FindingPrimeNumbersFrom3toN(N):
     listofprimes = list()
     for i in range(3,num,2):
-        flag = True
+        Is_i_aPrime = True
         for j in range(2,i):
             if i%j == 0:
-                flag = False
+                Is_i_aPrime = False
                 break
             if flag:
                 listofprimes.append(i)
