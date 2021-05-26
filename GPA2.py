@@ -15,10 +15,10 @@ def FindingPrimeNumbersFrom3toN(N):
 
 def PrintPrimeFactors(primes_list,number):
     IsPrimeFactorFound = False  #always use a question for booleans. Easy to understand
-    for i in primes_list:
-        if num%i == 0:
+    for primenumber in primes_list:
+        if num%primenumber == 0:
             IsPrimeFactorFound = True
-            print(i)
+            print(primenumber)
     if IsPrimeFactorFound == FALSE:
         print(num)
   
