@@ -1,6 +1,4 @@
 #GPA2
-num = int(input())
-prime = [2]
 
 #finding the prime numbers from 3 to given input and appending it in prime list
 for i in range(3,num,2):
@@ -22,3 +20,7 @@ for i in prime:
 #If no prime factors are there, the given input is getting printed
 if not flag:
   print(num)
+  
+  
+ if __name__ == "__main__"
+ 
