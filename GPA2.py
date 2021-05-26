@@ -1,6 +1,5 @@
 #GPA2
 
-#finding the prime numbers from 3 to given input and appending it in prime list
 def FindingPrimeNumbersFrom3toN(N):
     prime = list()
     for i in range(3,num,2):
@@ -14,8 +13,6 @@ def FindingPrimeNumbersFrom3toN(N):
     return prime
 
 
-
-#checking the primes are divisible by given input
 def PrintPrimeFactors(primes_list,number):
     IsPrimeFactorFound = False  #always use a question for booleans. Easy to understand
     for i in primes_list:
