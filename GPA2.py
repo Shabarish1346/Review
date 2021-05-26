@@ -1,7 +1,7 @@
 #GPA2
 
 def FindingPrimeNumbersFrom3toN(N):
-    prime = list()
+    listofprimes = list()
     for i in range(3,num,2):
         flag = True
         for j in range(2,i):
@@ -9,8 +9,8 @@ def FindingPrimeNumbersFrom3toN(N):
                 flag = False
                 break
             if flag:
-                prime.append(i)
-    return prime
+                listofprimes.append(i)
+    return listofprimes
 
 
 def PrintPrimeFactors(primes_list,number):
