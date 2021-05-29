@@ -1,34 +1,27 @@
-#GPA2
-
-def FindingPrimeNumbersFrom3toN(N):
-    listofprimes = list()
-    for i in range(3,num,2):
-        Is_i_aPrime = True
+def GeneratePrimesFrom3toN(N):    
+    primes =list()
+    
+    for i in range(3,N,2):
+        Is_i_aPrme = True      
         for j in range(2,i):
             if i%j == 0:
-                Is_i_aPrime = False
+                Is_i_aPrme = False
                 break
-            if flag:
-                listofprimes.append(i)
-    return listofprimes
-
+        if Is_i_aPrme == True:
+            primes.append(i)
+    return primes
 
 def PrintPrimeFactors(primes_list,number):
-    IsPrimeFactorFound = False  #always use a question for booleans. Easy to understand
+    IsPrimeFactorFound = False
     for primenumber in primes_list:
-        if num%primenumber == 0:
+        if number%primenumber == 0:
             IsPrimeFactorFound = True
             print(primenumber)
-    if IsPrimeFactorFound == FALSE:
-        print(num)
-  
-  
+    if IsPrimeFactorFound == False:
+        print(number)
 
 # equivalent to main function in c  
 if __name__ == "__main__":
-
     num = int(input())
-    primenumbers_list = FindingPrimeNumbersFrom3toN(num)
-    PrintPrimeFactors(primenumbers_list,num)
-
- 
+    PrimesFrom3ToN = GeneratePrimesFrom3toN(num)
+    PrintPrimeFactors(PrimesFrom3ToN,num)
